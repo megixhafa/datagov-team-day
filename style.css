@@ -1,0 +1,271 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f0f0f0;
+    -webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+    -webkit-mask-size: 944px 604px;
+    -webkit-mask-repeat: repeat;
+    mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+    mask-size: 944px 604px;
+    mask-repeat: repeat;
+}
+
+/* Wrapper */
+.wrapper {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+.navigation {
+    position: fixed;
+    width: 160px;
+    height: 100%;
+    background: #fff;
+}
+
+.navTop {
+    padding: 10px;
+    text-align: center;
+}
+
+.navTop img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navMid {
+    padding: 10px;
+    text-align: center;
+}
+
+.navMid h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 700; /* Bold */
+    border-bottom: 2px solid #68B4EF;
+}
+
+.navMid p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.navBottom {
+    padding: 10px;
+}
+
+.navBottom a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navBottom a:hover {
+    background: #68B4EF;
+    color: #fff;
+}
+
+/* Main Content */
+.contents {
+    margin-left: 180px;
+    padding: 20px;
+}
+
+.cTitle {
+    margin-bottom: 20px;
+}
+
+.cTitle h1 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 2em;
+}
+
+.cbanner {
+    width: 100%;
+    height: 160px;
+    background: url('http://azalient.com/img/peopleInBuildings.jpg') no-repeat center center/cover;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.sect {
+    margin-bottom: 40px;
+}
+
+.sect h2 {
+    margin: 0 0 10px 0;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #68B4EF;
+}
+
+.sect p {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Agenda Section */
+.agenda ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.agenda li {
+    margin-bottom: 10px;
+}
+
+.agenda strong {
+    display: inline-block;
+    width: 120px;
+}
+
+/* Discussions Section */
+.discussions strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.discussions em {
+    display: block;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Map Section */
+.map {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Speakers Section */
+.speaker {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s, opacity 0.3s;
+}
+
+.speaker:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.speaker.one {
+    background: url('http://www.ctg.albany.edu/static/iscc_images/powell.jpg') no-repeat center center/cover;
+}
+
+.speaker.two {
+    background: url('http://www.ctg.albany.edu/static/iscc_images/flood.jpg') no-repeat center center/cover;
+}
+
+.speaker.three {
+    background: url('http://www.ctg.albany.edu/static/iscc_images/gallagher.jpg') no-repeat center center/cover;
+}
+
+/* Form Section */
+.formLine {
+    margin-bottom: 15px;
+}
+
+.formLine label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+.formLine input,
+.formLine textarea {
+    width: calc(100% - 120px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formLine input[type="text"],
+.formLine input[type="email"],
+.formLine input[type="url"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formLine textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button.submit {
+    display: block;
+    padding: 10px 20px;
+    background: #68B4EF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.submit:hover {
+    background-color: #4a9bd6;
+}
+
+.stamp {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0.25rem solid;
+    border-radius: 1rem;
+    color: #555;
+    transform: rotate(12deg);
+    -webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+    -webkit-mask-size: 944px 604px;
+    mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+    mask-size: 944px 604px;
+    mix-blend-mode: multiply;
+}
+
+.is-approved {
+    color: #0A9928;
+    border: 0.5rem solid #0A9928;
+    transform: rotate(12deg);
+    -webkit-mask-position: 17rem 8rem;
+    float: right;
+}
+
+.is-draft {
+    color: #C4C4C4;
+    border: 1rem double #C4C4C4;
+    transform: rotate(0deg);
+    font-size: 3rem;
+    border-radius: 0;
+    padding: 0.25rem 1.5rem;
+}
